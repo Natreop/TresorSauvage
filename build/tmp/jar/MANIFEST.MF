@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Specification-Title: tresorssauvages
+Specification-Version: 1
+Implementation-Title: tresorssauvages
+Implementation-Version: 1.0.0
+
