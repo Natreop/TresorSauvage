@@ -1,1 +1,14 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven { url = 'https://maven.minecraftforge.net/' }
+        maven { url = 'https://maven.parchmentmc.org' }   // needed for the Parchment plugin
+    }
+}
+
+plugins {
+    // lets Gradle auto-download JDK 17 for the toolchain if it's missing
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.8.0'
+}
+
 rootProject.name = 'relootmod'

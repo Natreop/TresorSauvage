@@ -1,11 +1,5 @@
-pluginManagement {
-    repositories {
-        gradlePluginPortal()
-        maven { url = 'https://maven.minecraftforge.net/' }
-    }
-}
-
 plugins {
+    id 'java'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
 }
@@ -13,8 +7,11 @@ plugins {
 group = 'com.relootmod'
 version = '1.0.0-1.20.1'
 
+base {
+    archivesName = 'relootmod'
+}
+
 java {
-    archivesBaseName = 'relootmod'
     toolchain.languageVersion = JavaLanguageVersion.of(17)
 }
 
@@ -22,7 +19,7 @@ minecraft {
     mappings channel: 'parchment', version: '2023.09.03-1.20.1'
 
     runs {
-        client {
+        configureEach {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
@@ -32,41 +29,29 @@ minecraft {
                 }
             }
         }
-
-        server {
-            workingDirectory project.file('run')
-            property 'forge.logging.markers', 'REGISTRIES'
-            property 'forge.logging.console.level', 'debug'
-            mods {
-                relootmod {
-                    source sourceSets.main
-                }
-            }
-        }
+        client { }
+        server { }
     }
 }
 
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
     minecraft 'net.minecraftforge:forge:1.20.1-47.2.0'
-    implementation 'com.google.code.gson:gson:2.10.1'
+    // Gson is already bundled with Minecraft, so this line is usually unnecessary:
+    // implementation 'com.google.code.gson:gson:2.10.1'
 }
 
 tasks.named('jar', Jar).configure {
     manifest {
         attributes([
-            "Specification-Title"     : "relootmod",
-            "Specification-Vendor"    : "RelootModDev",
-            "Specification-Version"   : "1",
-            "Implementation-Title"    : project.name,
-            "Implementation-Version"  : project.jar.archiveVersion,
-            "Implementation-Vendor"   : "RelootModDev",
-            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+                "Specification-Title"     : "relootmod",
+                "Specification-Vendor"    : "RelootModDev",
+                "Specification-Version"   : "1",
+                "Implementation-Title"    : project.name,
+                "Implementation-Version"  : project.version,
+                "Implementation-Vendor"   : "RelootModDev",
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
     finalizedBy 'reobfJar'
