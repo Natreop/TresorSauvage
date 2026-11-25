@@ -1,0 +1,286 @@
+{
+  "HOPITAL": {
+    "commun": [
+      { "id": "minecraft:paper", "min": 1, "max": 4, "name": "Bandage Simple" }
+    ],
+    "peu_commun": [
+      { "id": "minecraft:potion", "min": 1, "max": 1, "name": "Antiseptique Médical" }
+    ],
+    "rare": [
+      { "id": "minecraft:glistering_melon_slice", "min": 1, "max": 2, "name": "Trousse de Premiers Soins" }
+    ],
+    "epique": [
+      { "id": "minecraft:golden_apple", "min": 1, "max": 1, "name": "Kit Chirurgical Avancé" }
+    ],
+    "legendaire": [
+      { "id": "minecraft:enchanted_golden_apple", "min": 1, "max": 1, "name": "Sérum Régénérant Militaire" }
+    ],
+    "mythique": [
+      { "id": "minecraft:totem_of_undying", "min": 1, "max": 1, "name": "Défibrillateur Miraculeux" }
+    ]
+  },
+  "POLICE": {
+    "commun": [
+      { "id": "minecraft:stick", "min": 1, "max": 1, "name": "Matraque en Bois" }
+    ],
+    "peu_commun": [
+      { "id": "minecraft:chainmail_helmet", "min": 1, "max": 1, "name": "Casque Anti-Émeute" }
+    ],
+    "rare": [
+      { "id": "minecraft:crossbow", "min": 1, "max": 1, "name": "Taser Neutralisant" }
+    ],
+    "epique": [
+      { "id": "minecraft:iron_chestplate", "min": 1, "max": 1, "name": "Gilet Pare-Balles Police" }
+    ],
+    "legendaire": [
+      { "id": "minecraft:diamond_chestplate", "min": 1, "max": 1, "name": "Gilet Tactique du SWAT" }
+    ],
+    "mythique": [
+      { "id": "minecraft:netherite_chestplate", "min": 1, "max": 1, "name": "Blindage d'Intervention Lourde" }
+    ]
+  },
+  "MILITAIRE": {
+    "commun": [
+      { "id": "minecraft:iron_boots", "min": 1, "max": 1, "name": "Rangers Militaires" }
+    ],
+    "peu_commun": [
+      { "id": "minecraft:tnt", "min": 1, "max": 2, "name": "Charge C4" }
+    ],
+    "rare": [
+      { "id": "minecraft:iron_sword", "min": 1, "max": 1, "name": "Baïonnette Commando" }
+    ],
+    "epique": [
+      { "id": "minecraft:diamond_sword", "min": 1, "max": 1, "name": "Lame Tactique des Forces Spéciales" }
+    ],
+    "legendaire": [
+      { "id": "minecraft:netherite_helmet", "min": 1, "max": 1, "name": "Casque Vision Thermique" }
+    ],
+    "mythique": [
+      { "id": "minecraft:netherite_sword", "min": 1, "max": 1, "name": "Prototype de Combat" }
+    ]
+  },
+  "MUNITIONS": {
+    "commun": [
+      { "id": "minecraft:arrow", "min": 8, "max": 24, "name": "Balles 9mm" }
+    ],
+    "peu_commun": [
+      { "id": "minecraft:arrow", "min": 16, "max": 32, "name": "Cartouches Calibre 12" }
+    ],
+    "rare": [
+      { "id": "minecraft:iron_nugget", "min": 10, "max": 25, "name": "Munitions 5.56mm OTAN" }
+    ],
+    "epique": [
+      { "id": "minecraft:gold_nugget", "min": 6, "max": 16, "name": "Balles Perforantes .50 BMG" }
+    ],
+    "legendaire": [
+      { "id": "minecraft:spectral_arrow", "min": 16, "max": 32, "name": "Munitions Incendiaires Traçantes" }
+    ],
+    "mythique": [
+      { "id": "minecraft:netherite_scrap", "min": 1, "max": 2, "name": "Ogive Mini-Nucléaire" }
+    ]
+  },
+  "FERME": {
+    "commun": [
+      { "id": "minecraft:wheat", "min": 4, "max": 12, "name": "Fagot de Paille Fraîche" }
+    ],
+    "peu_commun": [
+      { "id": "minecraft:carrot", "min": 3, "max": 8, "name": "Carotte du Potager" }
+    ],
+    "rare": [
+      { "id": "minecraft:iron_hoe", "min": 1, "max": 1, "name": "Bêche de Fermier Renforcée" }
+    ],
+    "epique": [
+      { "id": "minecraft:golden_carrot", "min": 2, "max": 6, "name": "Légume Hybride Fortifié" }
+    ],
+    "legendaire": [
+      { "id": "minecraft:honey_bottle", "min": 2, "max": 4, "name": "Miel Brut Bio de la Ruche" }
+    ],
+    "mythique": [
+      { "id": "minecraft:diamond_hoe", "min": 1, "max": 1, "name": "Faux Antique des Moissons" }
+    ]
+  },
+  "CUISINE": {
+    "commun": [
+      { "id": "minecraft:bread", "min": 2, "max": 5, "name": "Baguette Rassie" }
+    ],
+    "peu_commun": [
+      { "id": "minecraft:cooked_beef", "min": 1, "max": 3, "name": "Plat de Bœuf Cuisiné" }
+    ],
+    "rare": [
+      { "id": "minecraft:mushroom_stew", "min": 1, "max": 1, "name": "Ragoût Forestier Chaud" }
+    ],
+    "epique": [
+      { "id": "minecraft:cooked_porkchop", "min": 2, "max": 4, "name": "Ration Traiteur Sous-Vide" }
+    ],
+    "legendaire": [
+      { "id": "minecraft:golden_apple", "min": 1, "max": 2, "name": "Menu Gastronomique 3 Étoiles" }
+    ],
+    "mythique": [
+      { "id": "minecraft:suspicious_stew", "min": 1, "max": 1, "name": "Rocambolesque Festin Sacré" }
+    ]
+  },
+  "SURVIVANT": {
+    "commun": [
+      { "id": "minecraft:flint_and_steel", "min": 1, "max": 1, "name": "Briquet Usagé" }
+    ],
+    "peu_commun": [
+      { "id": "minecraft:compass", "min": 1, "max": 1, "name": "Boussole de Survie" }
+    ],
+    "rare": [
+      { "id": "minecraft:leather_boots", "min": 1, "max": 1, "name": "Bottes de Trekking Étanche" }
+    ],
+    "epique": [
+      { "id": "minecraft:fishing_rod", "min": 1, "max": 1, "name": "Canne à Pêche en Carbone" }
+    ],
+    "legendaire": [
+      { "id": "minecraft:clock", "min": 1, "max": 1, "name": "Montre Militaire GPS" }
+    ],
+    "mythique": [
+      { "id": "minecraft:elytra", "min": 1, "max": 1, "name": "Parachute Tactique d'Évacuation" }
+    ]
+  },
+  "GUN": {
+    "commun": [
+      { "id": "minecraft:wooden_shovel", "min": 1, "max": 1, "name": "Pistolet Artisanal 9mm" }
+    ],
+    "peu_commun": [
+      { "id": "minecraft:crossbow", "min": 1, "max": 1, "name": "Pistolet Automatique Compact" }
+    ],
+    "rare": [
+      { "id": "minecraft:bow", "min": 1, "max": 1, "name": "Fusil à Pompe Calibre 12" }
+    ],
+    "epique": [
+      { "id": "minecraft:crossbow", "min": 1, "max": 1, "name": "Fusil d'Assaut Militaire" }
+    ],
+    "legendaire": [
+      { "id": "minecraft:bow", "min": 1, "max": 1, "name": "Fusil Sniper de Haute Précision" }
+    ],
+    "mythique": [
+      { "id": "minecraft:netherite_hoe", "min": 1, "max": 1, "name": "Canon Lourd Automatique" }
+    ]
+  },
+  "MAGASIN_NOURRITURE": {
+    "commun": [
+      { "id": "minecraft:cookie", "min": 4, "max": 10, "name": "Paquet de Biscuits Secs" },
+      { "id": "minecraft:sweet_berries", "min": 5, "max": 12, "name": "Sachet de Bonbons Fruités" }
+    ],
+    "peu_commun": [
+      { "id": "minecraft:apple", "min": 2, "max": 6, "name": "Pomme d'Étalage" },
+      { "id": "minecraft:bread", "min": 2, "max": 4, "name": "Pain de Mie Américain" }
+    ],
+    "rare": [
+      { "id": "minecraft:baked_potato", "min": 2, "max": 5, "name": "Boîte de Chips Barbecue" },
+      { "id": "minecraft:melon_slice", "min": 4, "max": 8, "name": "Tranches de Pastèque en Barquette" }
+    ],
+    "epique": [
+      { "id": "minecraft:cake", "min": 1, "max": 1, "name": "Gâteau d'Anniversaire Sous Boîte" },
+      { "id": "minecraft:pumpkin_pie", "min": 1, "max": 2, "name": "Tarte Gourmande Artisanale" }
+    ],
+    "legendaire": [
+      { "id": "minecraft:potion", "min": 1, "max": 2, "name": "Pack de Canettes Énergisantes" }
+    ],
+    "mythique": [
+      { "id": "minecraft:golden_apple", "min": 2, "max": 4, "name": "Réserve VIP de Chocolat Précieux" }
+    ]
+  },
+  "BRICOLAGE": {
+    "commun": [
+      { "id": "minecraft:iron_nugget", "min": 4, "max": 16, "name": "Lot de Vis et Clous" }
+    ],
+    "peu_commun": [
+      { "id": "minecraft:string", "min": 2, "max": 8, "name": "Ruban Adhésif Blindé" }
+    ],
+    "rare": [
+      { "id": "minecraft:iron_pickaxe", "min": 1, "max": 1, "name": "Marteau Perforateur" }
+    ],
+    "epique": [
+      { "id": "minecraft:anvil", "min": 1, "max": 1, "name": "Établi de Chaudronnier" }
+    ],
+    "legendaire": [
+      { "id": "minecraft:diamond_pickaxe", "min": 1, "max": 1, "name": "Meuleuse Industrielle" }
+    ],
+    "mythique": [
+      { "id": "minecraft:netherite_pickaxe", "min": 1, "max": 1, "name": "Découpeur Plasma Haute Pression" }
+    ]
+  },
+  "STATION_SERVICE": {
+    "commun": [
+      { "id": "minecraft:coal", "min": 2, "max": 8, "name": "Bidon d'Huile Usagée" }
+    ],
+    "peu_commun": [
+      { "id": "minecraft:copper_ingot", "min": 2, "max": 6, "name": "Câbles de Démarrage en Cuivre" }
+    ],
+    "rare": [
+      { "id": "minecraft:shears", "min": 1, "max": 1, "name": "Pince Monseigneur Professionnelle" }
+    ],
+    "epique": [
+      { "id": "minecraft:redstone_block", "min": 1, "max": 2, "name": "Batterie de Camion 24V" }
+    ],
+    "legendaire": [
+      { "id": "minecraft:lava_bucket", "min": 1, "max": 1, "name": "Jerrican d'Essence Sans-Plomb 98" }
+    ],
+    "mythique": [
+      { "id": "minecraft:beacon", "min": 1, "max": 1, "name": "Moteur V8 Turbo Modifié" }
+    ]
+  },
+  "PHARMACIE": {
+    "commun": [
+      { "id": "minecraft:glass_bottle", "min": 2, "max": 6, "name": "Flacon d'Alcool à 90°" }
+    ],
+    "peu_commun": [
+      { "id": "minecraft:spider_eye", "min": 1, "max": 3, "name": "Échantillon de Toxine" }
+    ],
+    "rare": [
+      { "id": "minecraft:glowstone_dust", "min": 2, "max": 5, "name": "Antibiotiques à Large Spectre" }
+    ],
+    "epique": [
+      { "id": "minecraft:blaze_powder", "min": 1, "max": 3, "name": "Stéroïdes Anabolisants" }
+    ],
+    "legendaire": [
+      { "id": "minecraft:dragon_breath", "min": 1, "max": 1, "name": "Antidote à la Peste Zombie" }
+    ],
+    "mythique": [
+      { "id": "minecraft:nether_star", "min": 1, "max": 1, "name": "Molécule Génétique Synthétique" }
+    ]
+  },
+  "CHASSE_PECHE": {
+    "commun": [
+      { "id": "minecraft:feather", "min": 4, "max": 12, "name": "Plumes d'Appeau" }
+    ],
+    "peu_commun": [
+      { "id": "minecraft:leather", "min": 2, "max": 6, "name": "Peau de Cerf Tanné" }
+    ],
+    "rare": [
+      { "id": "minecraft:lead", "min": 1, "max": 2, "name": "Piège à Loup Renforcé" }
+    ],
+    "epique": [
+      { "id": "minecraft:crossbow", "min": 1, "max": 1, "name": "Arbalète de Chasseur Poulie" }
+    ],
+    "legendaire": [
+      { "id": "minecraft:trident", "min": 1, "max": 1, "name": "Harpon en Titane" }
+    ],
+    "mythique": [
+      { "id": "minecraft:bow", "min": 1, "max": 1, "name": "Arc Long Ancestral du Grand Traqueur" }
+    ]
+  },
+  "BANQUE": {
+    "commun": [
+      { "id": "minecraft:paper", "min": 5, "max": 20, "name": "Liasses de Billets Dévalués" }
+    ],
+    "peu_commun": [
+      { "id": "minecraft:gold_nugget", "min": 8, "max": 24, "name": "Pièces d'Or de Collection" }
+    ],
+    "rare": [
+      { "id": "minecraft:gold_ingot", "min": 2, "max": 6, "name": "Lingot d'Or Pur 24 Carats" }
+    ],
+    "epique": [
+      { "id": "minecraft:diamond", "min": 1, "max": 3, "name": "Diamant Brut d'Anvers" }
+    ],
+    "legendaire": [
+      { "id": "minecraft:emerald_block", "min": 1, "max": 2, "name": "Émeraude Royale d'Empire" }
+    ],
+    "mythique": [
+      { "id": "minecraft:netherite_ingot", "min": 1, "max": 2, "name": "Lingot de Netherite Forgé" }
+    ]
+  }
+}

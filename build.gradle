@@ -1,48 +1,77 @@
-plugins {
-    id 'eclipse'
-    id 'idea'
-    id 'maven-publish'
-    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven { url = 'https://maven.minecraftforge.net/' }
+    }
 }
 
-group = 'fr.tresorssauvages'
-version = '1.0.0'
-archivesBaseName = 'tresorssauvages'
+plugins {
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+    id 'org.parchmentmc.librarian.forgegradle' version '1.+'
+}
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+group = 'com.relootmod'
+version = '1.0.0-1.20.1'
+
+java {
+    archivesBaseName = 'relootmod'
+    toolchain.languageVersion = JavaLanguageVersion.of(17)
+}
 
 minecraft {
-    mappings channel: 'official', version: '1.20.1'
-    copyIdeResources = true
+    mappings channel: 'parchment', version: '2023.09.03-1.20.1'
 
     runs {
         client {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-            mods { tresorssauvages { source sourceSets.main } }
+            mods {
+                relootmod {
+                    source sourceSets.main
+                }
+            }
         }
+
         server {
             workingDirectory project.file('run')
+            property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-            mods { tresorssauvages { source sourceSets.main } }
+            mods {
+                relootmod {
+                    source sourceSets.main
+                }
+            }
         }
     }
 }
 
-repositories { mavenCentral() }
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+repositories {
+    mavenCentral()
+}
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.20.1-47.2.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
 }
 
 tasks.named('jar', Jar).configure {
     manifest {
         attributes([
-            'Specification-Title': 'tresorssauvages',
-            'Specification-Version': '1',
-            'Implementation-Title': project.name,
-            'Implementation-Version': project.jar.archiveVersion,
+            "Specification-Title"     : "relootmod",
+            "Specification-Vendor"    : "RelootModDev",
+            "Specification-Version"   : "1",
+            "Implementation-Title"    : project.name,
+            "Implementation-Version"  : project.jar.archiveVersion,
+            "Implementation-Vendor"   : "RelootModDev",
+            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
+    finalizedBy 'reobfJar'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
 }
