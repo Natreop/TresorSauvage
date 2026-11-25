@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: relootmod
+Specification-Vendor: RelootModDev
+Specification-Version: 1
+Implementation-Title: relootmod
+Implementation-Version: 1.0.0-1.20.1
+Implementation-Vendor: RelootModDev
+Implementation-Timestamp: 2026-11-25T19:43:05+0100
+
